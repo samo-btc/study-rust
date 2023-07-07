@@ -4,8 +4,23 @@ new:
 new-lib:
 	cargo new --lib ./src/$(N) --vcs none
 
-build:
+rbuild:
 	cargo build --manifest-path ./src/${N}/Cargo.toml
 
 run:
 	cargo run --manifest-path ./src/${N}/Cargo.toml
+
+build-run:
+	cargo build --manifest-path ./src/${N}/Cargo.toml && cargo run --manifest-path ./src/${N}/Cargo.toml
+
+build:
+	docker-compose build
+
+up:
+	docker-compose up -d
+
+down:
+	docker-compose down
+
+restart:
+	docker restart rust
