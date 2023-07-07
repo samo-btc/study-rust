@@ -1,27 +1,37 @@
 
 fn main() {
-    let x: u32 = 5;
-    let x: u32 = x + 1;
+    //type()
 
-    println!("{}", x);
+    // let x = plus_one(5);
+    // println!("{}", x);
 
-    let spaces: &str = "   ";
-    let spaces: usize = spaces.len();
+    // let y = plus_one(5);
+    // println!("{}", y);
 
-    println!("{}", spaces);
+    let number = 3;
+
+    if number > 0 {
+        println!("number was three");     // 数値は3です
+    }
 }
 
-// fn main() {
-//     let mut x = 5;
-//     println!("The value of x is: {}", x);     // xの値は{}です
-//     x = 6;
-//     println!("The value of x is: {}", x);
+// fn plus_one(x: i32) -> i32 {
+//     x + 1
 // }
 
-// エラーコード
-// fn main() {
-//     let x = 5;
-//     println!("The value of x is: {}", x);     // xの値は{}です
-//     x = 6;
-//     println!("The value of x is: {}", x);
+// fn test_type() {
+//     let x: u32 = 5;
+//     let x: u32 = x + 1;
+
+//     println!("{}", x);
+
+//     let spaces: &str = "   ";
+//     let spaces: usize = spaces.len();
+
+//     println!("{}", spaces);
+
+//     let mut y: u32 = 0;
+//     y = y + 10;
+
+//     println!("{}", y);
 // }
